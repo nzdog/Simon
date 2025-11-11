@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lichen Reflection – Short Feedback</title>
+    <title>Field Questionnaire for Tim</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -257,41 +257,26 @@
             font-style: italic;
         }
 
-        .radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
+        .closing-section {
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
         }
 
-        .radio-option {
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.6);
-            border: 2px solid rgba(226, 232, 240, 0.8);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .closing-title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 1.2rem;
+            color: #000;
+            margin-bottom: 1rem;
+            font-weight: 500;
         }
 
-        .radio-option:hover {
-            background: rgba(255, 255, 255, 0.9);
-            border-color: #a855f7;
-        }
-
-        .radio-option input[type="radio"] {
-            margin-right: 1rem;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
-
-        .radio-option label {
-            cursor: pointer;
-            flex: 1;
+        .closing-text {
             font-size: 1rem;
-            color: #333;
+            color: #475569;
+            line-height: 1.7;
         }
 
         .submit-container {
@@ -357,6 +342,10 @@
                 font-size: 2rem;
             }
 
+            .form-container {
+                padding: 2rem;
+            }
+
             .question-group {
                 padding: 1.5rem;
             }
@@ -378,126 +367,105 @@
 
     <div class="container">
         <div class="header">
-            <h1 class="title">Lichen Reflection</h1>
-            <p class="subtitle">Short Feedback</p>
+            <h1 class="title">Field Questionnaire</h1>
+            <p class="subtitle">For Simon</p>
         </div>
 
         <div class="purpose-section">
             <h2 class="purpose-title">Purpose</h2>
-            <p class="purpose-text">To understand what kind of shift or awareness the session created for you.</p>
-            <p class="how-to-use">There are no right or wrong answers.</p>
+            <p class="purpose-text">To help you sense the field you're operating in—the invisible architecture shaping your pace, decisions, and energy.</p>
+
+            <h3 class="purpose-title">How to Use</h3>
+            <p class="how-to-use">Take these questions slowly. You don't need perfect answers. Just notice what feels true, even in fragments.</p>
         </div>
 
-        <form name="lichen-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/feedback-thank-you.html" class="form-container">
-            <input type="hidden" name="form-name" value="lichen-feedback" />
+        <form name="field-questionnaire" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form-container">
+            <input type="hidden" name="form-name" value="field-questionnaire" />
             <p style="display: none;">
                 <label>Don't fill this out if you're human: <input name="bot-field" /></label>
             </p>
 
-            <!-- Section 1: Immediate Experience -->
             <div class="question-group">
                 <div class="question-number">Question 1</div>
-                <h3 class="question">In a few words, how would you describe what the experience felt like?</h3>
-                <p class="question-explanation">This captures the energetic texture of the field — how the system was received emotionally and somatically, not just intellectually.</p>
+                <h3 class="question">What feels "normal" in your work right now?</h3>
+                <p class="question-explanation">What feels "normal" often reveals the invisible rules of your field. It shows whether your baseline is regenerative or extractive.</p>
                 <div class="examples">
                     <div class="examples-title">Examples:</div>
-                    <div class="example">"Grounding — like things finally made sense again."</div>
-                    <div class="example">"Unexpectedly emotional; it hit something deeper than I thought."</div>
-                    <div class="example">"Calm and clear, as if fog lifted."</div>
+                    <div class="example">"It feels normal to be behind and catching up."</div>
+                    <div class="example">"It feels normal to have long stretches of creative flow, then rest."</div>
+                    <div class="example">"It feels normal to push out content quickly even if it isn't perfect."</div>
                 </div>
-                <textarea name="question1" placeholder="Describe the feeling..." required></textarea>
+                <textarea name="question1" placeholder="Take your time... what feels true for you?" required></textarea>
             </div>
 
             <div class="question-group">
                 <div class="question-number">Question 2</div>
-                <h3 class="question">What, if anything, surprised you or stood out most strongly?</h3>
-                <p class="question-explanation">Surprise indicates points where the field moved — where habitual patterns loosened and new awareness emerged.</p>
+                <h3 class="question">What does your field reward you for?</h3>
+                <p class="question-explanation">Fields shape behavior by rewarding certain actions. If you see what gets rewarded, you see the values driving your work.</p>
                 <div class="examples">
                     <div class="examples-title">Examples:</div>
-                    <div class="example">"How quickly we got to something I hadn't named before."</div>
-                    <div class="example">"That it felt more like reflection than coaching."</div>
-                    <div class="example">"The accuracy of what surfaced from such simple questions."</div>
+                    <div class="example">"I get attention when I post fast, not when I go deep."</div>
+                    <div class="example">"Clients praise me for being reliable and thoughtful."</div>
+                    <div class="example">"Investors light up when I talk about scale, not sustainability."</div>
                 </div>
-                <textarea name="question2" placeholder="What surprised you..." required></textarea>
+                <textarea name="question2" placeholder="Notice what gets celebrated in your world..." required></textarea>
             </div>
 
-            <!-- Section 2: Perception Shift -->
             <div class="question-group">
                 <div class="question-number">Question 3</div>
-                <h3 class="question">After the session, did anything change in how you see your work or situation?</h3>
-                <p class="question-explanation">This gives a measurable indicator of field movement — how much perception reorganized during the walk.</p>
-                <div class="radio-group">
-                    <div class="radio-option">
-                        <input type="radio" id="no-change" name="question3" value="No change" required>
-                        <label for="no-change">No change</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="small-clarity" name="question3" value="Small clarity" required>
-                        <label for="small-clarity">Small clarity</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="noticeable-reframing" name="question3" value="Noticeable reframing" required>
-                        <label for="noticeable-reframing">Noticeable reframing</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="major-shift" name="question3" value="Major shift in perspective" required>
-                        <label for="major-shift">Major shift in perspective</label>
-                    </div>
+                <h3 class="question">How does your field hold you when things get hard?</h3>
+                <p class="question-explanation">The way challenges are treated shows if your field is extractive (punishing) or regenerative (composting into learning).</p>
+                <div class="examples">
+                    <div class="examples-title">Examples:</div>
+                    <div class="example">"When a video doesn't land, I feel like the whole project is failing."</div>
+                    <div class="example">"When I miss a week, I can reflect and improve next time."</div>
+                    <div class="example">"If sales dip, I get pressure from outside voices to work harder."</div>
                 </div>
+                <textarea name="question3" placeholder="How does your environment respond to difficulty?" required></textarea>
             </div>
 
             <div class="question-group">
                 <div class="question-number">Question 4</div>
-                <h3 class="question">If something did change, what was it?</h3>
-                <p class="question-explanation">Naming the nature of the shift reveals where the system's effect is landing — insight, relief, direction, or release.</p>
+                <h3 class="question">What's the quality of your decisions in this field?</h3>
+                <p class="question-explanation">Decision quality is a signal of field health. Coherent fields create clarity; extractive fields create reactivity.</p>
                 <div class="examples">
                     <div class="examples-title">Examples:</div>
-                    <div class="example">"I saw that control was costing me clarity."</div>
-                    <div class="example">"I realised I've been working from other people's priorities."</div>
-                    <div class="example">"I stopped feeling stuck — there's actually a next step now."</div>
+                    <div class="example">"I often make decisions late at night under stress."</div>
+                    <div class="example">"I notice the best decisions come when I step back for a day."</div>
+                    <div class="example">"I'm pushed to decide quickly, even when I don't have enough signal."</div>
                 </div>
-                <textarea name="question4" placeholder="Describe the change..."></textarea>
+                <textarea name="question4" placeholder="Reflect on how decisions emerge for you..." required></textarea>
             </div>
 
-            <!-- Section 3: Agency and Integration -->
             <div class="question-group">
                 <div class="question-number">Question 5</div>
-                <h3 class="question">How would you describe your sense of agency (ability to choose or act) now compared with before?</h3>
-                <p class="question-explanation">Agency is the clearest indicator of coherence returning; an increased sense of choice means the field has stabilised.</p>
+                <h3 class="question">What is the cost of staying in this field?</h3>
+                <p class="question-explanation">Every field asks for something—energy, time, relationships. Seeing the cost helps you weigh if the field is worth it.</p>
                 <div class="examples">
                     <div class="examples-title">Examples:</div>
-                    <div class="example">"I feel more in charge of my creative direction."</div>
-                    <div class="example">"Still uncertain, but I'm less paralysed — I can see options."</div>
-                    <div class="example">"I realised I can lead the process rather than wait for others."</div>
+                    <div class="example">"I'm energized but I neglect rest."</div>
+                    <div class="example">"I get traction but it strains my partner relationship."</div>
+                    <div class="example">"I grow fast but feel disconnected from the original purpose."</div>
                 </div>
-                <textarea name="question5" placeholder="Reflect on your sense of agency..." required></textarea>
+                <textarea name="question5" placeholder="What price are you paying to be here?" required></textarea>
             </div>
 
             <div class="question-group">
                 <div class="question-number">Question 6</div>
-                <h3 class="question">What feels easier, clearer, or more possible since the session?</h3>
-                <p class="question-explanation">This measures integration — whether the insight has translated into new lightness or forward motion.</p>
+                <h3 class="question">What kind of field would you want to be in?</h3>
+                <p class="question-explanation">Clarity on the desired field helps you see the gap between where you are and where you could be. It also names the qualities you most need for resilience.</p>
                 <div class="examples">
                     <div class="examples-title">Examples:</div>
-                    <div class="example">"Making decisions without overthinking."</div>
-                    <div class="example">"Letting clients set their pace without losing mine."</div>
-                    <div class="example">"Starting my own project finally feels doable."</div>
+                    <div class="example">"I'd love a field where deep work is valued more than speed."</div>
+                    <div class="example">"I want a field that supports creative play, not just output."</div>
+                    <div class="example">"I'd choose a field where trust builds momentum instead of pressure."</div>
                 </div>
-                <textarea name="question6" placeholder="What feels different now..." required></textarea>
+                <textarea name="question6" placeholder="Dream into what's possible..." required></textarea>
             </div>
 
-            <!-- Section 4: Optional -->
-            <div class="question-group">
-                <div class="question-number">Question 7 – Optional</div>
-                <h3 class="question">If you told someone else about this experience, what would you say it is or does?</h3>
-                <p class="question-explanation">This reveals the natural language people use to describe the system — useful for communication and resonance mapping.</p>
-                <div class="examples">
-                    <div class="examples-title">Examples:</div>
-                    <div class="example">"It's like guided clarity — not therapy, not strategy, but something in between."</div>
-                    <div class="example">"A mirror that helps you see your own operating system."</div>
-                    <div class="example">"A reset for how you relate to your work."</div>
-                </div>
-                <textarea name="question7" placeholder="How would you describe this to others..."></textarea>
+            <div class="closing-section">
+                <h3 class="closing-title">Closing Reflection</h3>
+                <p class="closing-text">You don't need to label your field as "good" or "bad." Most fields are mixed. The invitation is simply to see the architecture you're in—and decide whether it's the one you want shaping your future.</p>
             </div>
 
             <div class="submit-container">
