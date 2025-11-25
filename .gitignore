@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Development
+.claude/
+
+# Backup folders and working directories
+Walk*/
+Revised*/

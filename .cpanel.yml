@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nzdog/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp onboarding-questionnaire.html $DEPLOYPATH
+    - /bin/cp thank-you.html $DEPLOYPATH
+    - /bin/cp feedback-thank-you.html $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
